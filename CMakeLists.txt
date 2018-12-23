@@ -16,6 +16,7 @@ include_directories(
 
 include_directories(SYSTEM
     ${CMAKE_SOURCE_DIR}/dep/glad/include
+    ${CMAKE_SOURCE_DIR}/dep/glm/include
 )
 
 set(EXECUTABLE_NAME myopengl)
@@ -32,3 +33,5 @@ target_link_libraries(
     glfw
     ${CMAKE_DL_LIBS}
 )
+
+install(DIRECTORY ${CMAKE_SOURCE_DIR}/assets/ DESTINATION ${CMAKE_BINARY_DIR}/)
