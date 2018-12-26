@@ -36,4 +36,4 @@ target_link_libraries(
     ${CMAKE_DL_LIBS}
 )
 
-install(DIRECTORY ${CMAKE_SOURCE_DIR}/assets/ DESTINATION ${CMAKE_BINARY_DIR}/)
+install(DIRECTORY ${CMAKE_SOURCE_DIR}/assets/ DESTINATION ${CMAKE_BINARY_DIR})
