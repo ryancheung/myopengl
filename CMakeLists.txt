@@ -17,6 +17,7 @@ include_directories(
 include_directories(SYSTEM
     ${CMAKE_SOURCE_DIR}/dep/glad/include
     ${CMAKE_SOURCE_DIR}/dep/glm/include
+    ${CMAKE_SOURCE_DIR}/dep/stb/include
 )
 
 set(EXECUTABLE_NAME myopengl)
@@ -24,6 +25,7 @@ set(EXECUTABLE_NAME myopengl)
 add_executable(
     ${EXECUTABLE_NAME}
     Main.cpp
+    ${CMAKE_SOURCE_DIR}/dep/stb/src/stb_image.cpp
 )
 
 target_link_libraries(
